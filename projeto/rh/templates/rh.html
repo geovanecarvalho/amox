@@ -1,0 +1,125 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>RH</h2>
+    <p class="lead"> sigla RH significa Recursos Humanos. Dentro de uma empresa, RH é o departamento que tem a responsabilidade de seleção, contratação, treinamento, remuneração, formação sobre higiene e segurança no trabalho, e estabelecimento de toda a comunicação relativa aos funcionários da organização.</p>
+  </div>
+
+  
+
+      
+  <form method="POST">
+    {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nome:</label> </br> {{form.nome}}
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Sexo:</label> </br> {{form.sexo}}
+    
+  </div>
+
+  <div class="form-group"></br>
+    <label for="exampleInputPassword1">Estado Civil:</label> </br> {{form.estado_civil}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">RG:</label> </br> {{form.rg}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">CPF:</label> </br> {{form.cpf}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Fone:</label> </br> {{form.fone}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Celular:</label> </br> {{form.celular}}
+    
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Função:</label> </br> {{form.funcao}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Admissão:</label> </br> {{form.admissao}}
+    
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Salário:</label> </br> {{form.salario}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Refeição:</label> </br>{{form.refeicao}}
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Passagem:</label> </br> {{form.passagem}}
+    
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">Email:</label> </br> {{form.email}}
+    
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">CEP:</label> </br> {{form.cep}}
+    
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">Endereço:</label>  </br> {{form.endereco}}
+    
+  </div>
+  
+   <div class="form-group">
+    <label for="exampleInputPassword1">País:</label> </br> {{form.pais}}
+    
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">Estado:</label> </br> {{form.estado}}
+    
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+        
+      
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2019 Company GeoTec Informática</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidade</a></li>
+      <li class="list-inline-item"><a href="#">Termos</a></li>
+      <li class="list-inline-item"><a href="#">Suporte</a></li>
+    </ul>
+  </footer>
+
+{% endblock content %}
+
+
