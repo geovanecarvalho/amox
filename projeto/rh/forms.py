@@ -11,3 +11,9 @@ class FuncionarioForm(ModelForm):
 				  'funcao', 'admissao', 'salario',
 				  'refeicao', 'passagem', 'email', 'cep',
 				  'endereco', 'pais', 'estado' )
+
+
+		erros_mesages ={
+			"nome": {'Este campo é obrigatorio'},
+
+		}

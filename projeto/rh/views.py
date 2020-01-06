@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from projeto.rh.forms import FuncionarioForm 
 
 # Create your views here.
@@ -8,5 +8,8 @@ def rh(request):
 
 	if request.method == 'POST':
 		form.save()
+		return redirect('/rh')
 
 	return render(request, 'rh.html', {'form': form})
+
+

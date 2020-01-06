@@ -24,4 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('logout/', LogoutView.as_view(), name='logout'),
     path('rh/', include('projeto.rh.urls')),
+    
+    
 ]
