@@ -19,27 +19,31 @@
   </div>
 </div>
 
+
+
 <div class="page-header">
-  <h2>Lista de Produtos
+  <h2>Lista de Produtos</h2>
     <span class="pull-right">
       <a href="{% url 'produto:produto_add' %}">
         <button type="button" class="btn btn-primary">
           <span class="fa fa-plus"></span> Adicionar
         </button>
       </a>
+      <!--
       <a href="{% url 'produto:produto_add2' %}">
         <button type="button" class="btn btn-primary">
           <span class="fa fa-plus"></span> Adicionar usando função
         </button>
       </a>
+    -->
     </span>
   </h2>
 
   {% if object_list %}
     
-    <table class="table table-striped">
+    <table class="table table-striped " >
       <thead>
-        <tr>
+        <tr class="table-warning">
           <th>Importado</th>
           <th>NCM</th>
           <th>Produto</th>
