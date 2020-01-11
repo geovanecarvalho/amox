@@ -15,8 +15,10 @@ class Produto(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True
+
     )
 
+    foto = models.FileField(upload_to="media/%y/%m/%d/", blank=True)
     class Meta:
         ordering = ('produto',)
 

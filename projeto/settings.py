@@ -132,3 +132,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 LOGIN_URL = '/admin/login/'
 LOGOUT_REDIRECT_URL = 'core:index'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = "{}/media".format(BASE_DIR)

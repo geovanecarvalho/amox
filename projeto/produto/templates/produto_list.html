@@ -44,6 +44,7 @@
     <table class="table table-striped " >
       <thead>
         <tr class="table-warning">
+          <th>Fotos</th>
           <th>Importado</th>
           <th>NCM</th>
           <th>Produto</th>
@@ -55,7 +56,9 @@
       <tbody>
         {% for object in object_list %}
           <tr>
+            <td> <img src="/media/{{object.foto}}" class="rounded float-left" width="100"></td>  
             <td>
+              
               {% if object.importado %}
                 <i class="fa fa-check-circle ok"></i>
               {% else %}

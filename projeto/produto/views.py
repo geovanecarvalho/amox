@@ -37,7 +37,7 @@ def produto_detail(request, pk):
 
 
 def produto_add(request):
-    form = ProdutoForm(request.POST or None)
+    form = ProdutoForm(request.POST, request.FILES or None)
     template_name = 'produto_form2.html'
 
     if request.method == 'POST':
