@@ -1,20 +1,31 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <a href="{% url 'produto:produto_list' %}">Voltar</a>
 
 <h1>{{ object }}
+
+  <!--<a href="{% url 'produto:produto_edit' object.pk %}">-->
   <span class="pull-right">
-    <a href="{% url 'produto:produto_edit' object.pk %}">
+    <a href="{% url 'estoque:estoque_entrada_list' %}">
       <button type="button" class="btn btn-success">
-        <span class="fa fa-pencil"></span> Editar
+        <span class="fa fa-pencil"></span> Entrada
       </button>
     </a>
   </span>
+
+  
 </h1>
 
-<img src="/media/">
+<span class="pull-right">
+    <a href="{% url 'estoque:estoque_saida_list' %}">
+      <button type="button" class="btn btn-danger">
+        <span class="fa fa-pencil"></span> Saida
+      </button>
+    </a>
+  </span>
+
 <div class="col-sm-6">
   <table class="table table-user-information" >
     <tbody>

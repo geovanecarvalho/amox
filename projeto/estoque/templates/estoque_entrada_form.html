@@ -15,6 +15,9 @@
 
 {% block content %}
 
+
+  
+
 <a href="{% url 'estoque:estoque_entrada_list' %}">Voltar</a>
 
 <div class="row">
@@ -67,7 +70,9 @@
             <button class="btn btn-primary" value="Save">
               <i class="fa fa-floppy-o"></i>
               Salvar
-            </button>
+            </button>&nbsp;
+
+            
             <a href="{% url 'estoque:estoque_entrada_list' %}" class="btn btn-danger">
               <i class="fa fa-times"></i>
               Cancelar
