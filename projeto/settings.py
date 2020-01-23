@@ -134,4 +134,4 @@ LOGIN_URL = '/admin/login/'
 LOGOUT_REDIRECT_URL = 'core:index'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = "{}/media/".format(BASE_DIR)
+MEDIA_ROOT = "{}/projeto/core/static/media/".format(BASE_DIR)
