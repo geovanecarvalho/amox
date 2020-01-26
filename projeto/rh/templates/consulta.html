@@ -10,6 +10,7 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">Codigo</th>
+      <th scope="col">Foto</th>
       <th scope="col">Funcionário</th>
       <th scope="col">Celular</th>
       
@@ -21,7 +22,8 @@
      
 
       <th scope="row">{{forms.id}}</th>
-         <td><a href="{% url 'detalhe'%}">{{forms.nome}}</a></td>
+         <td><img src="/media/{{forms.foto}}"/ width="50"></td>
+         <td><a href="{% %}">{{forms.nome}}</a></td>
 			   <td>{{forms.celular}}</td>
        
       </tr>

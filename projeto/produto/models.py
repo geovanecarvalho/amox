@@ -18,7 +18,7 @@ class Produto(models.Model):
 
     )
 
-    foto = models.FileField(upload_to="media/", blank=True)
+    foto = models.FileField(upload_to="media/produtos", blank=True)
     class Meta:
         ordering = ('produto',)
 

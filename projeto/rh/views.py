@@ -17,9 +17,11 @@ def rh(request):
 
 def consulta(request):
 	form = Funcionario.objects.all()
-
 	return render(request, 'consulta.html', {'form': form})
 
-def detalhe(request):
-	form = Funcionario.objects.all()
-	return render(request, 'detalhe.html',{'form': form})
+def detalhe(request, pk):
+    template_name = 'detalhe.html'
+    obj = Funcionario.objects.get(pk=pk)
+    context = {'object': obj}
+    
+    return render(request, template_name, context)

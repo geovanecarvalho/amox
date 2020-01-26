@@ -15,11 +15,11 @@ class Funcionario(models.Model):
 	salario = models.DecimalField(max_digits=10, decimal_places=2)
 	refeicao = models.DecimalField(max_digits=10, decimal_places=2)
 	passagem = models.DecimalField(max_digits=10, decimal_places=2)
-	email = models.EmailField(max_length=254)
 	cep = models.CharField(max_length=12)
 	endereco = models.TextField()
 	pais = models.CharField(max_length=50)
 	estado = models.CharField(max_length=50)
+	foto = models.FileField(upload_to="media/foto/", blank=True)
 
 	def __str__(self):
 		return self.nome
