@@ -19,7 +19,7 @@ class Funcionario(models.Model):
 	endereco = models.TextField()
 	pais = models.CharField(max_length=50)
 	estado = models.CharField(max_length=50)
-	foto = models.FileField(upload_to="media/foto/", blank=True)
+	foto = models.FileField(upload_to="fotos/", blank=True)
 
 	def __str__(self):
 		return self.nome
