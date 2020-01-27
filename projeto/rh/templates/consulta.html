@@ -27,7 +27,7 @@
         {% else%}
           <td><img src="{% static 'image/user.png'%}" width="50"></td>
         {%endif%}
-         <td><a href="{% url 'detalhe' forms.pk %}">{{forms.nome}}</a></td>
+         <td><a href="{% url 'detalhe' forms.pk %}" target="blank">{{forms.nome}}</a></td>
 			   <td><a href="https://wa.me/55{{forms.celular}}?text=Olá%20{{forms.nome}}!">{{forms.celular}}</a></td>
        
       </tr>

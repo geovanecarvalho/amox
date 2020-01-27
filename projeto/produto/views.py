@@ -15,6 +15,7 @@ from .forms import ProdutoForm
 
 def produto_list(request):
     template_name = 'produto_list.html'
+    import ipdb; ipdb.set_trace()
     objects = Produto.objects.all()
     search = request.GET.get('search')
     if search:
